@@ -291,8 +291,11 @@ af.two_fields_output(player_field, bot_visible_field,
                      player_ship_zone, bot_ship_zone)
 
 if random.choice(['bot', 'player']) == 'player':
-    print("Ваш ход")
+    print("Ваш ход первый")
     players_shot()
+else:
+    print("Противник ходит первым")
+    delay(2)
 
 
 while len(player_ship_zone) > 0 and len(bot_ship_zone) > 0:
